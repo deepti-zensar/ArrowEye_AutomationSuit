@@ -110,7 +110,7 @@
     <Compile Include="API\APICommon.cs" />
     <Compile Include="Common\AppNameHelper.cs" />
     <Compile Include="Common\Browser.cs" />
-    <Compile Include="Common\DriverUtil1.cs" />
+    <Compile Include="Common\DriverUtil.cs" />
     <Compile Include="Common\DriverUtilities.cs" />
     <Compile Include="Common\Extensions.cs" />
     <Compile Include="Common\Logger.cs" />
@@ -129,7 +129,7 @@
     <Compile Include="Tests\Feature\Products\LetterCarriers.cs" />
     <Compile Include="Tests\Feature\Products\PlasticCards.cs" />
     <Compile Include="Tests\Regression\ClientInformation.cs" />
-    <Compile Include="Tests\Regression\EVM.cs" />
+    <Compile Include="Tests\Regression\EMV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Regression\Products.cs" />
     <Compile Include="Tests\Regression\Programs.cs" />

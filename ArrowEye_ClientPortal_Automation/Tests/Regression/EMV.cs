@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace ArrowEye_ClientPortal_Automation.Tests.Regression
 {
     [TestFixture]
-    class EVM : TestBase
+    class EMV : TestBase
     {
         [Test]
         [Description("Simple test")]
@@ -21,7 +21,6 @@ namespace ArrowEye_ClientPortal_Automation.Tests.Regression
             CP_Pages.Home.NavigateToIssuers();
             CP_Pages.IssuersPage.AddNewIssuer(name, cpv, appPath, notes);
         }
-
 
     }
 }
