@@ -58,7 +58,7 @@ namespace ArrowEye_ClientPortal_Automation.Common
 
         public static void Click(IWebElement element)
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
             element.Click();
         }
 

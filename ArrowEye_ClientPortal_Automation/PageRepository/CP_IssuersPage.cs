@@ -2,11 +2,7 @@
 using OpenQA.Selenium;
 using ArrowEye_ClientPortal_Automation.Common;
 using System.Threading;
-using OpenQA.Selenium.Support.UI;
-using System.Reflection;
-using System.Windows.Forms;
 using Keys = OpenQA.Selenium.Keys;
-
 
 namespace ArrowEye_ClientPortal_Automation.PageRepository
 {
@@ -86,6 +82,11 @@ namespace ArrowEye_ClientPortal_Automation.PageRepository
             Thread.Sleep(5000);
 
         }
+
+
+
+
+
 
     }
 }
