@@ -9,7 +9,7 @@ using System.Configuration;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {
     public class Browser
     {

@@ -5,7 +5,7 @@ using LumenWorks.Framework.IO.Csv;
 using System.IO;
 using NUnit.Framework;
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {
      public class DataSources
     {

@@ -17,8 +17,9 @@ using System.Threading;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Security;
+using SeleniumExtras.WaitHelpers;
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {   
     public class DriverUtilities
     {
@@ -59,25 +60,21 @@ namespace ArrowEye_ClientPortal_Automation.Common
                     driver = new InternetExplorerDriver(options_IE);
 
                     driver.Manage().Window.Maximize();
-                   // driver.Manage().Timeouts().ImplicitlyWait = TimeSpan.FromSeconds(2);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
-
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
                     break;
 
                 case "chrome":
                     driver = new ChromeDriver();
                  //   Logger.Log.Info("Launched Chrome without any user");
                     driver.Manage().Window.Maximize();
-                   // driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
 
                     break;
 
                 case "firefox":
                     driver = new FirefoxDriver();
                     driver.Manage().Window.Maximize();
-                    //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
 
                     break;
 
@@ -120,8 +117,7 @@ namespace ArrowEye_ClientPortal_Automation.Common
                     driver = new InternetExplorerDriver(serviceIE, options_IE);
 
                     driver.Manage().Window.Maximize();
-                  //  driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
 
                     break;
 
@@ -140,7 +136,7 @@ namespace ArrowEye_ClientPortal_Automation.Common
 
                     var options = new ChromeOptions();
                     //Added following line to ignore Adminstrator policy pop-up
-                    options.AddAdditionalCapability("useAutomationExtension", false);
+                    options.AddAdditionalChromeOption("useAutomationExtension", false);
                     options.AddArgument("--no-sandbox");
                     options.AddArgument("--start-maximized");
 
@@ -150,15 +146,13 @@ namespace ArrowEye_ClientPortal_Automation.Common
                   //  Logger.Log.Info("Launched Chrome with user "+userName);
 
 
-                    //driver.Manage().Timeouts().ImplicitWait= TimeSpan.FromSeconds(2);
-                    driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
+                    driver.Manage().Timeouts().ImplicitWait= TimeSpan.FromSeconds(2);
                     break;
 
                 case "firefox":
                     driver = new FirefoxDriver();
                     driver.Manage().Window.Maximize();
-                     driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
-                   // driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
                     break;
 
 
@@ -684,7 +678,7 @@ namespace ArrowEye_ClientPortal_Automation.Common
         static public void ImplicitWait(int seconds = 10)
         {
 
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(seconds));
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(seconds);            
             //loma
 
         }

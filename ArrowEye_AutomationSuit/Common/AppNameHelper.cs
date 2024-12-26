@@ -5,7 +5,7 @@ using System.Linq;
 using System.Configuration;
 
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {
      public static class AppNameHelper
      {

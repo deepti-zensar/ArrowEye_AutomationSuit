@@ -1,4 +1,4 @@
-﻿using ArrowEye_ClientPortal_Automation.Common;
+﻿using ArrowEye_Automation_Framework.Common;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArrowEye_ClientPortal_Automation
+namespace ArrowEye_Automation_Framework
 {
     [TestFixture]
     public class TestBase

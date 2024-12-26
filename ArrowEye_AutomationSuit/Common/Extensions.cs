@@ -7,7 +7,7 @@ using System.Threading;
 using OpenQA.Selenium.Interactions;
 using NLog;
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {
     /// <summary>
     /// This class has extensions to selenium webdriver's, driver, IWebelemt and IList[IWebElement] class

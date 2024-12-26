@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NLog;
 using NUnit.Framework;
 
-namespace ArrowEye_ClientPortal_Automation.Common
+namespace ArrowEye_Automation_Framework.Common
 {
     class Logger
     {

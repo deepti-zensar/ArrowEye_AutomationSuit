@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArrowEye_ClientPortal_Automation.API
+namespace ArrowEye_Automation_Framework.API
 {
     class APICommon
     {
